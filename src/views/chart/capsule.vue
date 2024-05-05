@@ -17,7 +17,28 @@ export default {
       var chartDom = this.$refs.main;
       var myChart = echarts.init(chartDom);
       var option;
-      const data = [];
+      const data = [
+  {
+    name: '南阳',
+    value: 157
+  },
+  {
+    name: '周口',
+    value: 67
+  },
+  {
+    name: '漯河',
+    value: 123
+  },
+  {
+    name: '郑州',
+    value: 55
+  },
+  {
+    name: '西峡',
+    value: 98
+  }
+];
 
       option = {
         xAxis: {
@@ -65,40 +86,6 @@ export default {
         animationEasing: 'linear',
         animationEasingUpdate: 'linear'
       };
-      function run() {
-
-        const socket = new WebSocket('ws://localhost:3000'); // 与后端 WebSocket 服务器建立连接
-
-        socket.onmessage = event => {
-          let waterData = JSON.parse(event.data);
-          data[0] = waterData[0].value
-          data[1] = waterData[1].value
-          data[2] = waterData[2].value
-          data[3] = waterData[3].value
-          data[4] = waterData[4].value
-
-
-        };
-        socket.onclose = event => {
-
-        };
-
-        myChart.setOption({
-          series: [
-            {
-              type: 'bar',
-              data
-            }
-          ]
-        });
-      }
-      setTimeout(function () {
-        run();
-      }, 0);
-      setInterval(function () {
-        run();
-      }, 2000);
-
       option && myChart.setOption(option);
 
 

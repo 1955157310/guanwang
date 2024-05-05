@@ -112,7 +112,7 @@ export default {
           },
           {
             name: '新乡',
-            value: 80
+            value: 100
           }
         ]
       }

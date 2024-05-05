@@ -37,12 +37,12 @@ import * as echarts from 'echarts';
 
 export default {
   mounted() {
-      this.getJSON1(),
-     
+    this.getJSON1(),
+
       this.getJSON3(),
       this.getJSON4(),
-      this.getJSON2data() 
-     
+      this.getJSON2data()
+
   },
   methods: {
     getJSON1() {
@@ -147,10 +147,7 @@ export default {
       option = {
         color: ['#80FFA5', '#00DDFF', '#37A2FF', '#FF0087', '#FFBF00'],
         title: {
-          text: '本周各地区最高温度',
-          textStyle: {
-            color: '#FFFFFF'
-          }
+          text: 'Gradient Stacked Area Chart'
         },
         tooltip: {
           trigger: 'axis',
@@ -162,7 +159,7 @@ export default {
           }
         },
         legend: {
-          data: ['北京', '上海', '广州', '深圳', '长春']
+          data: ['Line 1', 'Line 2', 'Line 3', 'Line 4', 'Line 5']
         },
         toolbox: {
           feature: {
@@ -184,17 +181,12 @@ export default {
         ],
         yAxis: [
           {
-            type: 'value',
-            axisLine: {
-              lineStyle: {
-                color: '#FFFFFF'
-              }
-            }
+            type: 'value'
           }
         ],
         series: [
           {
-            name: '北京',
+            name: 'Line 1',
             type: 'line',
             stack: 'Total',
             smooth: true,
@@ -218,10 +210,10 @@ export default {
             emphasis: {
               focus: 'series'
             },
-            data: this.weatherdata[0].temperature[0].data
+            data: [140, 232, 101, 264, 90, 340, 250]
           },
           {
-            name: '上海',
+            name: 'Line 2',
             type: 'line',
             stack: 'Total',
             smooth: true,
@@ -245,10 +237,10 @@ export default {
             emphasis: {
               focus: 'series'
             },
-            data:this.weatherdata[1].temperature[0].data
+            data: [120, 282, 111, 234, 220, 340, 310]
           },
           {
-            name: '广州',
+            name: 'Line 3',
             type: 'line',
             stack: 'Total',
             smooth: true,
@@ -272,10 +264,10 @@ export default {
             emphasis: {
               focus: 'series'
             },
-            data: this.weatherdata[2].temperature[0].data
+            data: [320, 132, 201, 334, 190, 130, 220]
           },
           {
-            name: '深圳',
+            name: 'Line 4',
             type: 'line',
             stack: 'Total',
             smooth: true,
@@ -299,10 +291,10 @@ export default {
             emphasis: {
               focus: 'series'
             },
-            data:this.weatherdata[3].temperature[0].data
+            data: [220, 402, 231, 134, 190, 230, 120]
           },
           {
-            name: '长春',
+            name: 'Line 5',
             type: 'line',
             stack: 'Total',
             smooth: true,
@@ -330,13 +322,13 @@ export default {
             emphasis: {
               focus: 'series'
             },
-            data:this.weatherdata[4].temperature[0].data
+            data: [220, 302, 181, 234, 210, 290, 150]
           }
         ]
-      };
+      };;
 
       option && myChart.setOption(option);
-       
+
     },
     getJSON3() {
       var chartDom = this.$refs.gauge2;
@@ -453,7 +445,7 @@ export default {
       var myChart = echarts.init(chartDom);
       var option;
       option = {
-        textStyle:{
+        textStyle: {
           fontSize: 6,
         },
         series: [
@@ -588,19 +580,19 @@ export default {
 
       option && myChart.setOption(option);
     },
-    getJSON2data:function () {
-      this.$axios.get('http://localhost:3000/weather').then(res=>{
-          console.log(res.data[0].temperature[0].data);
-          this.weatherdata=res.data;
-          this.getJSON2()
-      })
+    getJSON2data() {
+      this.getJSON2()
+      // this.$axios.get('http://localhost:3000/weather').then(res=>{
+      //     console.log(res.data[0].temperature[0].data);
+      //     this.weatherdata=res.data;
+      //     this.getJSON2()
+      // })
     }
   },
   data() {
     return {
-      weatherdata:[]
+      weatherdata: []
     }
   }
 }
 </script>
-
