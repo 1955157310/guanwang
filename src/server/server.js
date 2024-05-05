@@ -25,7 +25,7 @@ app.get('/weather', async (req, res) => {
 let data = [
   {
     name: '南阳',
-    value: 167
+    value: 157
   },
   {
     name: '周口',
