@@ -13,10 +13,7 @@
                     <label>密码：</label><input type="password" name="password" v-model.trim="password" placeholder="请输入密码">
                     <br/>
                   </div>
-                  <div class="keep">
-                    <input @click="handlesave" id="yes" type="radio" value="0" ><!-- 点击选中 -->
-                    <label for="yes">保持登录状态</label>
-                  </div>
+                
               </div>
               
             </form>
@@ -32,7 +29,7 @@
     #background{
         width: 100%;
         height: 100%;
-        background: url("./jpg/denglu.jpg");
+        background: url("./jpg/denglu1.png");
         background-size:100% 100%;
         position: fixed;
         top: 0;

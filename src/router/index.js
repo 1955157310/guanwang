@@ -22,6 +22,12 @@ const routes = [
 
   },
   {
+    path: '/system',
+    name: 'system',
+    component: () => import('../views/backsystem/index.vue')
+
+  },
+  {
     path: '/home',
     name: 'home',
     //redirect:'home',

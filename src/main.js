@@ -9,10 +9,12 @@ import dataV from '@jiaminghi/data-view'
 import * as echarts from 'echarts/core';
 import { GlobeComponent } from 'echarts-gl/components';
 import { CanvasRenderer } from 'echarts/renderers';
+import VueSeamlessScroll from 'vue-seamless-scroll'
 
 echarts.use([GlobeComponent, CanvasRenderer]);
 Vue.prototype.$echarts = echarts
 Vue.prototype.$axios = axios
+Vue.use(VueSeamlessScroll)
 
 //axios.defaults.baseURL = 'http://localhost:8055'
 Vue.use(ElementUI).use(dataV)
