@@ -7,77 +7,24 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    redirect: 'denglu',
+    redirect: 'index',
   },
   {
-    path: '/denglu',
-    name: 'denglu',
-    component: () => import('../denglu.vue')
-
+    path: '/index',
+    name: 'index',
+    component: () => import('../views/index.vue')
   },
   {
-    path: '/zhuce',
-    name: 'zhuce',
-    component: () => import('../zhuce.vue')
-
+    path: '/head',
+    name: 'head',
+    component: () => import('../views/head/index.vue')
   },
   {
-    path: '/system',
-    name: 'system',
-    component: () => import('../views/backsystem/index.vue')
-
+    path: '/bottom',
+    name: 'bottom',
+    component: () => import('../views/bottom/index.vue')
   },
-  {
-    path: '/home',
-    name: 'home',
-    //redirect:'home',
-    component: () => import('../views/home.vue'),
-    children: [
-         /*   {
-     path: '/home',
-     name: 'home',
-     //redirect:'home',
-     component: () => import('../views/home.vue'),
-
-   },  */{
-        path: '/file1',
-        name: 'file1',
-        meta :{
-          keepAlive:true
-        },
-        //redirect:'file1',
-        component: () => import('../views/file1.vue'),
-      },
-      {
-        path: '/file2',
-        name: 'file2',
-        meta :{
-          keepAlive:true
-        },
-        component: () => import('../views/file2.vue'),
-
-      },
-      {
-        path: '/file3',
-        name: 'file3',
-        component: () => import('../views/file3.vue'),
-
-      },
-      ,
-      {
-        path: '/file4',
-        name: 'file4',
-        component: () => import('../views/file4.vue'),
-
-      },
-      {
-        path: '/shiyan2',
-        name: 'shiyan2',
-        component: () => import('../views/shiyan2.vue'),
-
-      }
-    ]
-  },
+  
 ]
 const router = new VueRouter({
   mode: 'history',
