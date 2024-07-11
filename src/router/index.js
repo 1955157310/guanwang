@@ -20,9 +20,9 @@ const routes = [
     component: () => import('../views/head/index.vue')
   },
   {
-    path: '/bottom',
-    name: 'bottom',
-    component: () => import('../views/bottom/index.vue')
+    path: '/footer',
+    name: 'footer',
+    component: () => import('../views/footer/index.vue')
   },
   
 ]
