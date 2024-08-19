@@ -9,12 +9,12 @@
       </div>
     </div>
     <div class="menu">
-      <div>关于我们</div>
-      <div>公司业务</div>
-      <div>可持续发展</div>
-      <div>投资者关系与媒体</div>
-      <div>职业发展</div>
-      <div>多媒体资源库</div>
+      <div @click="tomodular('/aboutIndex')">关于我们</div>
+      <div @click="tomodular('/businessIndex')">公司业务</div>
+      <div @click="tomodular('/continuedIndex')">可持续发展</div>
+      <div @click="tomodular('/mediaIndex')">投资者关系与媒体</div>
+      <div @click="tomodular('/developmentIndex')">职业发展</div>
+      <div @click="tomodular('/resourcesIndex')">多媒体资源库</div>
     </div>
     <div style="width: 100%;">
       <div class="swiper-container">
@@ -81,6 +81,11 @@ export default {
           el: '.swiper-pagination',
           clickable: true, // 分页器可以点击
         },
+      })
+    },
+    tomodular(path) {
+      this.$router.push({
+        path:path
       })
     }
   }

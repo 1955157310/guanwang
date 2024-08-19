@@ -15,14 +15,34 @@ const routes = [
     component: () => import('../views/index.vue')
   },
   {
-    path: '/head',
-    name: 'head',
-    component: () => import('../views/head/index.vue')
+    path: '/aboutIndex',
+    name: 'aboutIndex',
+    component: () => import('../views/aboutUs/index.vue')
   },
   {
-    path: '/footer',
-    name: 'footer',
-    component: () => import('../views/footer/index.vue')
+    path: '/businessIndex',
+    name: 'businessIndex',
+    component: () => import('../views/business/index.vue')
+  },
+  {
+    path: '/continuedIndex',
+    name: 'continuedIndex',
+    component: () => import('../views/continued/index.vue')
+  },
+  {
+    path: '/mediaIndex',
+    name: 'mediaIndex',
+    component: () => import('../views/media/index.vue')
+  },
+  {
+    path: '/developmentIndex',
+    name: 'developmentIndex',
+    component: () => import('../views/development/index.vue')
+  },
+  {
+    path: '/resourcesIndex',
+    name: 'resourcesIndex',
+    component: () => import('../views/resources/index.vue')
   },
   
 ]

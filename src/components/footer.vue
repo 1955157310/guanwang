@@ -108,6 +108,8 @@ export default {
 .alllianxi{
   display: flex;
   flex-direction: column;
+  color: rgb(119, 119, 119);
+  font-size: 13px;
 }
 .alllianxi div{
   flex: 1;
@@ -119,6 +121,8 @@ export default {
 .wenjian{
   width: 100%;
   padding: 40px 10px;
+  color: rgb(119, 119, 119);
+  font-size: 13px;
 }
 .leftcontent {
   width: 15%
@@ -148,5 +152,14 @@ export default {
   border-bottom: 2px solid #9ecc66;
   /* text-align: center; */
   /* border-image: linear-gradient(to right, transparent 0%, #9ecc66 0%, #9ecc66 80%, transparent 0%) 1 stretch; */
+}
+.menu div p:first-child {
+  font-weight: 600;
+  color: rgb(77, 77, 77);
+  font-size: 16px;
+}
+.menu div p{
+  font-size: 14px;
+  color: rgb(115, 115, 115);
 }
 </style>

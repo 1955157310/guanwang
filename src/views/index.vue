@@ -4,9 +4,14 @@
         <div class="info">
             <div class="infoItem">
                 <div style="color: #73669c;font-weight: 600;border-right: 2px solid #73669c;
-  border-image: linear-gradient(to bottom, transparent 20%, #73669c 20%, #73669c 80%, transparent 80%) 1 100%;">股价</div>
-                <div style="color: #73669c;font-weight: 600;border-bottom: 2px solid #73669c;border-image: linear-gradient(to left, transparent 15%, #73669c 15%, #73669c 85%, transparent 85%) 1  stretch;">A股 603993.SH</div>
-                <div style="color: #73669c;font-weight: 600;border-bottom: 2px solid #73669c;border-image: linear-gradient(to left, transparent 15%, #73669c 15%, #73669c 85%, transparent 85%) 1  stretch;">H股 03993.HK</div>
+  border-image: linear-gradient(to bottom, transparent 20%, #73669c 20%, #73669c 80%, transparent 80%) 1 100%;">股价
+                </div>
+                <div
+                    style="color: #73669c;font-weight: 600;border-bottom: 2px solid #73669c;border-image: linear-gradient(to left, transparent 15%, #73669c 15%, #73669c 85%, transparent 85%) 1  stretch;">
+                    A股 603993.SH</div>
+                <div
+                    style="color: #73669c;font-weight: 600;border-bottom: 2px solid #73669c;border-image: linear-gradient(to left, transparent 15%, #73669c 15%, #73669c 85%, transparent 85%) 1  stretch;">
+                    H股 03993.HK</div>
             </div>
             <div class="infoItem">
                 <div style="color: #73669c;font-weight: 600;">公司公告</div>
@@ -19,7 +24,9 @@
             </div>
         </div>
         <div class="map">
-            <img width="100%" src="https://ctdr.ccmapp.cn/gateway/file/statics/2024/07/15/444f1079-ba16-431d-89bd-8685da33ef79.png" alt="">
+            <img width="100%"
+                src="https://ctdr.ccmapp.cn/gateway/file/statics/2024/07/15/444f1079-ba16-431d-89bd-8685da33ef79.png"
+                alt="">
         </div>
         <div class="kechixu">
             <div class="kechixuleft">
@@ -83,10 +90,10 @@
                 <div>
                     <div class="fazhanText">
                         <div style="color: #73669c;padding-bottom: 5px;">
-                            清晰的环境治理路线图
+                            和周边社区共享发展成果
                         </div>
                         <div style="color: #9fc37f;padding-top: 5px;">
-                            2030碳达峰，2050碳中和
+                            全球惠及人数27万+
                         </div>
                     </div>
                     <div style="display: flex;flex-direction: row;justify-content: left;padding: 5px 0">
@@ -128,10 +135,10 @@
                 <div>
                     <div class="guanzhiText">
                         <div style="color: #73669c;padding-bottom: 5px;">
-                            清晰的环境治理路线图
+                            三层管理结构提效ESG管治效率
                         </div>
                         <div style="color: #9fc37f;padding-top: 5px;">
-                            2030碳达峰，2050碳中和
+                            持续打造负责任的矿业公司
                         </div>
                     </div>
                     <div style="display: flex;flex-direction: row;justify-content: left;padding: 5px 0">
@@ -215,15 +222,15 @@ export default {
             searchData: '',
             swiper: null,
             newsData: [
-                { imageUrl: 'https://ctdr.ccmapp.cn/gateway/file/statics/2024/07/14/62a85780-3feb-4252-a700-80c54767bff7.png', text: '新闻1' },
-                { imageUrl: 'https://ctdr.ccmapp.cn/gateway/file/statics/2024/07/14/2b774be3-e977-42ec-b65f-334f4cba63f0.jpeg', text: '新闻2' },
-                { imageUrl: 'https://ctdr.ccmapp.cn/gateway/file/statics/2024/07/14/c07076dc-49b5-4f3b-97bd-5e6b2decf9bb.jpeg', text: '新闻3' },
-                { imageUrl: 'https://ctdr.ccmapp.cn/gateway/file/statics/2024/07/14/737087bc-d4b6-4fd6-b064-2e1d03f368de.jpeg', text: '新闻4' },
-                { imageUrl: 'https://ctdr.ccmapp.cn/gateway/file/statics/2024/07/14/2497cebb-2e7f-4b1f-ad85-78d7dfc8e7a1.jpeg', text: '新闻5' },
-                { imageUrl: 'https://ctdr.ccmapp.cn/gateway/file/statics/2024/07/13/6685123d-dba8-435d-9e51-8691f7229cb6.png', text: '新闻6' },
-                { imageUrl: 'https://ctdr.ccmapp.cn/gateway/file/statics/2024/07/14/2497cebb-2e7f-4b1f-ad85-78d7dfc8e7a1.jpeg', text: '新闻7' },
-                { imageUrl: 'https://ctdr.ccmapp.cn/gateway/file/statics/2024/07/14/62a85780-3feb-4252-a700-80c54767bff7.png', text: '新闻8' },
-                { imageUrl: 'https://ctdr.ccmapp.cn/gateway/file/statics/2024/07/14/2b774be3-e977-42ec-b65f-334f4cba63f0.jpeg', text: '新闻9' },
+                { imageUrl: require('@/assets/img/index/huanjing1.jpeg'), text: '新闻1' },
+                { imageUrl: require('@/assets/img/index/huanjing2.jpeg'), text: '新闻2' },
+                { imageUrl: require('@/assets/img/index/huanjing3.jpeg'), text: '新闻3' },
+                { imageUrl: require('@/assets/img/index/shequ1.jpeg'), text: '新闻4' },
+                { imageUrl: require('@/assets/img/index/shequ2.jpeg'), text: '新闻5' },
+                { imageUrl: require('@/assets/img/index/shequ3.jpeg'), text: '新闻6' },
+                { imageUrl: require('@/assets/img/index/guanzhi1.png'), text: '新闻7' },
+                { imageUrl: require('@/assets/img/index/guanzhi2.png'), text: '新闻8' },
+                { imageUrl: require('@/assets/img/index/guanzhi3.jpeg'), text: '新闻9' },
             ],
             swiperList: [{
                 id: 1,
@@ -590,5 +597,4 @@ export default {
     height: 620px;
     /* background-color: #2e65cc; */
 }
-
 </style>
